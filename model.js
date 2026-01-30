@@ -1,4 +1,3 @@
-//  แก้ Link Model ตรงนี้ได้เลย
 const URL = "https://teachablemachine.withgoogle.com/models/aSyXl0QKe/"; 
 
 let model, webcam, labelContainer, maxPredictions;
@@ -20,7 +19,6 @@ async function init(button) {
 
     // ตั้งค่ากล้อง
     const flip = true; 
-    // ลดขนาด Webcam เพื่อความเสถียรในมือถือ (350x350)
     webcam = new tmImage.Webcam(350, 350, flip); 
     await webcam.setup(); 
     await webcam.play();
@@ -39,7 +37,7 @@ async function loop() {
     window.requestAnimationFrame(loop);
 }
 
-// ฟังก์ชันพยากรณ์ (Predict)
+// ฟังก์ชันพยากรณ์ 
 async function predict() {
     const prediction = await model.predict(webcam.canvas);
     
