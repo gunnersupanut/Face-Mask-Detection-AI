@@ -1,6 +1,4 @@
-// model.js - ไฟล์สำหรับเก็บ Logic การทำงานของ AI
-
-// ⭐️ แก้ Link Model ตรงนี้ได้เลย
+//  แก้ Link Model ตรงนี้ได้เลย
 const URL = "https://teachablemachine.withgoogle.com/models/aSyXl0QKe/"; 
 
 let model, webcam, labelContainer, maxPredictions;
