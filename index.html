@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB08 Mask Detection</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading-card">
+        <h1>Face Mask Detection AI </h1>
+    </div>
+    
+    <button type="button" onclick="init(this)">Start Camera Experience</button>
+    
+    <div id="webcam-container" class="card-container hidden"></div>
+    
+    <div class="card-container hidden" id="result-card">
+        <div id="label-container">Initializing AI System...</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    
+    <script src="model.js"></script>
+</body>
+</html>
